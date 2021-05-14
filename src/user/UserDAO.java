@@ -16,9 +16,9 @@ public class UserDAO {
 	// mysql에 접속해 주는 부분
 	public UserDAO() { // 생성자 실행될때마다 자동으로 db연결이 이루어 질 수 있도록함
 		try {
-			String dbURL = "jdbc:mysql://152.67.192.35:3306/bbs?&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-			String dbID = "admin";
-			String dbPassword = "lmyykr25";
+			String dbURL = "jdbc:mysql://<IP주소>:<PORT>/<DB Table>?&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+			String dbID = "<ID>";
+			String dbPassword = "<PW>";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
 		} catch (Exception e) {
