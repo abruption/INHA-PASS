@@ -94,7 +94,7 @@ tr:nth-child(even) {
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 <script type="text/javascript">
 (function() {
-	emailjs.init("user_nw6LbvTdqZiOI7bY0ZdC6");
+	emailjs.init("<emailjs API Key>");
 })();
 </script>
 
