@@ -115,9 +115,9 @@ tr:nth-child(even) {
 	
 	Connection conn = null;
 	
-	String url 		= "jdbc:mysql://152.67.192.35:3306/bbs?&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	String user 	= "admin";
-	String password = "lmyykr25";
+	String url 		= "jdbc:mysql://<IP주소>:<PORT>/<DB Table>?&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+	String user 	= "<ID>";
+	String password = "<PW>";
 	
 	Class.forName("com.mysql.jdbc.Driver");
 	conn = DriverManager.getConnection(url, user, password);
@@ -149,7 +149,7 @@ tr:nth-child(even) {
 
 $(document).ready(function(){
 	
-	var myKey = "KNCmsX8nZ7X7KtKkBYj7IA"; // sweet tracker에서 발급받은 자신의 키 넣는다.
+	var myKey = "<SWEET TRACKER API KEY>"; // sweet tracker에서 발급받은 자신의 키 넣는다.
 	
 	// 택배사 목록 조회 company-api
     $.ajax({
@@ -177,7 +177,7 @@ $(document).ready(function(){
 	
 	
 	$("#myButton1").click(function() {
-		var myKey = "z240k250g079e120n010r010d0";
+		var myKey = "<UNIPASS API KEY>";
 		var t_invoice = $('#invoiceNumberText').val();
 		
     	$.ajax({
@@ -262,7 +262,7 @@ $(document).ready(function(){
         		if(status == "통관목록심사완료" || "수입신고수리" || "반출완료"){		// 배송조회 API 호출
 					
         			var email = "<%=email%>";
-        			var myKey = "KNCmsX8nZ7X7KtKkBYj7IA"; 
+        			var myKey = "<SWEET TRACKER API KEY>"; 
         			var t_code = $('#tekbeCompnayList option:selected').attr('value');
 					var t_invoice = $('#invoiceNumberText').val();
 					emailjs.send('gmail', 'template_jvhoqrg', {
