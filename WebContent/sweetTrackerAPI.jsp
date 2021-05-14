@@ -75,7 +75,7 @@ tr:nth-child(even) {
 <script>
 
 $(document).ready(function(){
-	var myKey = "K8VhAxC030LyfGX2CWzTuw"; // sweet tracker에서 발급받은 자신의 키 넣는다.
+	var myKey = "<API KEY>"; // sweet tracker에서 발급받은 자신의 키 넣는다.
 	
 		// 택배사 목록 조회 company-api
         $.ajax({
